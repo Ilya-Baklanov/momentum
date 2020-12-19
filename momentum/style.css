@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  transition: background-image 2s ease-in-out;
+}
+
+#button{
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin: 10px;
+}
+#button:hover {
+  filter: grayscale(.8);
+}
+#button:active,
+#button:focus {
+  outline: 0;
+}
+#button:active{
+  transform: scale(1.02)
+}
+
+#time {
+  font-size: 8rem;
+}
+
+#day {
+  font-size: 1.3rem;
+}
+
+.quote{
+  position: relative;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.greeting{
+  display: flex;
+}
+h1 {
+  margin-bottom: 3rem;
+  padding: 5px;
+}
+
+.quote-button{
+  width: 75px;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 6rem;
+  }
+}
